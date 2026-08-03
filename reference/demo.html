@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Qaun Huyen — interdisciplinary artist, Hanoi</title>
+<meta name="description" content="Qaun Huyen (Quản Huyền / Vũ Lê Hoàng) is an interdisciplinary artist in Hanoi working across moving image, sound and real-time systems. Works, performances and writing.">
+<meta name="author" content="Qaun Huyen">
+<meta name="keywords" content="Qaun Huyen, Quản Huyền, Vũ Lê Hoàng, artist, Hanoi, Vietnam, audiovisual, real-time, NetChùa, 34 Studio">
+<link rel="canonical" href="https://qaun.homes/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Qaun Huyen">
+<meta property="og:title" content="Qaun Huyen — interdisciplinary artist, Hanoi">
+<meta property="og:description" content="Moving image, sound and real-time systems. Works, performances and writing.">
+<meta property="og:url" content="https://qaun.homes/">
+<meta property="og:image" content="https://qaun.homes/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Qaun Huyen — interdisciplinary artist, Hanoi">
+<meta name="twitter:description" content="Moving image, sound and real-time systems.">
+<meta name="twitter:image" content="https://qaun.homes/og.jpg">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fff'/%3E%3Crect x='1.5' y='1.5' width='29' height='29' fill='none' stroke='%23000' stroke-width='2'/%3E%3Ctext x='16' y='22' font-family='monospace' font-size='15' font-weight='700' text-anchor='middle' fill='%23000'%3E00%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Martian+Mono:wght@300;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#FFFFFF;--ink:#000000;--mid:#5C5C5C;--dim:#C2C2C2;
+  --edge:rgba(0,0,0,.15);--edge-2:rgba(0,0,0,.06);
+  --shadow:0 1px 2px rgba(0,0,0,.10),0 12px 40px rgba(0,0,0,.16);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--paper);color:var(--ink);font-family:Archivo,sans-serif;-webkit-font-smoothing:antialiased}
+body{min-height:100vh;display:flex;flex-direction:column;padding:clamp(16px,3vw,34px);overflow-x:hidden}
+button{font:inherit;background:none;border:none;color:inherit}
+
+/* ---------- desk ---------- */
+.masthead{display:flex;justify-content:space-between;align-items:flex-start;gap:24px;flex-wrap:wrap;padding-bottom:14px;border-bottom:1px solid var(--ink)}
+.name{font-size:clamp(22px,3vw,34px);font-weight:700;letter-spacing:-.03em;line-height:1}
+.alias{font-family:'Martian Mono',monospace;font-size:10px;font-weight:300;letter-spacing:.13em;color:var(--mid);margin-top:8px;text-transform:uppercase}
+.meta{font-family:'Martian Mono',monospace;font-size:10px;font-weight:300;line-height:1.9;color:var(--mid);text-align:right;letter-spacing:.04em}
+
+.stage{flex:1;display:flex;gap:clamp(20px,4vw,56px);align-items:center;padding:clamp(20px,4vh,48px) 0;flex-wrap:wrap}
+.board{flex:1 1 460px;min-width:300px}
+.grid{display:grid;grid-template-columns:repeat(10,1fr);border-top:1px solid var(--edge);border-left:1px solid var(--edge)}
+.cell{aspect-ratio:1;border-right:1px solid var(--edge);border-bottom:1px solid var(--edge);border-top:0;border-left:0;display:flex;align-items:center;justify-content:center;font-family:'Martian Mono',monospace;font-size:clamp(8px,1.05vw,12px);font-weight:300;color:var(--dim);background:transparent;cursor:default;transition:background .1s,color .1s;position:relative;padding:0}
+.cell.frag{color:var(--mid);cursor:pointer}
+.cell.work{color:var(--ink);font-weight:500;cursor:pointer}
+.cell.work::after{content:"";position:absolute;inset:auto 28% 5px 28%;height:2px;background:var(--ink)}
+.cell.work.upc::after{height:1px;background:var(--mid);inset:auto 34% 5px 34%}
+.cell.frag:hover,.cell.frag:focus-visible,.cell.work:hover,.cell.work:focus-visible{background:var(--ink);color:var(--paper);outline:none}
+.cell.work:hover::after,.cell.work:focus-visible::after{background:var(--paper)}
+.cell.flick{background:var(--edge-2)}
+.cell:not(.work):not(.frag):hover{background:var(--edge-2);color:var(--mid)}
+.cell.hit{background:var(--ink);color:var(--paper)}
+.cell.hit::after{background:var(--paper)}
+.cell.near{box-shadow:inset 0 0 0 2px var(--ink)}
+.key{display:flex;gap:18px;flex-wrap:wrap;margin-top:12px;font-family:'Martian Mono',monospace;font-size:9px;font-weight:300;letter-spacing:.1em;text-transform:uppercase;color:var(--mid)}
+.key span{display:flex;align-items:center;gap:6px}
+.sw{width:13px;height:13px;border:1px solid var(--edge);display:inline-block;position:relative}
+.sw.w::after{content:"";position:absolute;inset:auto 3px 2px 3px;height:2px;background:var(--ink)}
+.sw.u::after{content:"";position:absolute;inset:auto 4px 2px 4px;height:1px;background:var(--mid)}
+.sw.f{background:var(--edge-2)}
+
+.side{flex:1 1 280px;min-width:250px;display:flex;flex-direction:column;gap:22px}
+.readout{min-height:118px}
+.rl{font-family:'Martian Mono',monospace;font-size:10px;font-weight:300;letter-spacing:.13em;text-transform:uppercase;color:var(--mid);margin-bottom:9px}
+.rt{font-size:clamp(23px,3.3vw,36px);font-weight:700;letter-spacing:-.03em;line-height:1.04}
+.rd{font-size:13px;color:var(--mid);margin-top:9px;line-height:1.55;max-width:34ch}
+.stmt{font-size:15px;line-height:1.62;max-width:38ch;border-top:1px solid var(--edge);padding-top:18px}
+.nav{display:flex;gap:20px;flex-wrap:wrap;font-family:'Martian Mono',monospace;font-size:11px;font-weight:300;letter-spacing:.06em}
+.nav button,.nav a{cursor:pointer;border-bottom:2px solid var(--ink);padding-bottom:2px;color:var(--ink);text-decoration:none;font:inherit}
+.nav button:hover,.nav a:hover{background:var(--ink);color:var(--paper)}
+.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;border-top:1px solid var(--edge);padding-top:12px;font-family:'Martian Mono',monospace;font-size:10px;font-weight:300;color:var(--mid);letter-spacing:.05em}
+.seed{color:var(--ink);font-weight:500}
+
+/* ---------- windows ---------- */
+.win{position:fixed;background:var(--paper);border:1px solid var(--ink);box-shadow:var(--shadow);display:none;flex-direction:column;z-index:100;max-width:calc(100vw - 24px);max-height:calc(100vh - 24px)}
+.win.open{display:flex}
+.chrome{display:flex;align-items:center;gap:10px;padding:9px 12px;border-bottom:1px solid var(--ink);cursor:grab;user-select:none;flex:none}
+.chrome:active{cursor:grabbing}
+.lights{display:flex;gap:6px;flex:none}
+.lights i{width:11px;height:11px;border:1px solid var(--ink);border-radius:50%;display:block}
+.lights i.x{cursor:pointer}
+.lights i.x:hover{background:var(--ink)}
+.wtitle{font-size:12px;font-weight:600;letter-spacing:.01em}
+.wbody{overflow:auto;padding:clamp(18px,2.4vw,34px);flex:1}
+
+#winAbout{width:min(880px,calc(100vw - 24px));height:min(640px,calc(100vh - 24px));top:60px;left:60px}
+#winWorks{width:min(1080px,calc(100vw - 24px));height:min(700px,calc(100vh - 24px));top:96px;left:120px}
+#winContact{width:min(440px,calc(100vw - 24px));top:150px;left:200px}
+.cx{display:grid;grid-template-columns:auto 1fr;gap:8px 22px;align-items:baseline}
+.cx dt{font-family:'Martian Mono',monospace;font-size:9.5px;font-weight:300;letter-spacing:.13em;text-transform:uppercase;color:var(--mid)}
+.cx dd{font-size:17px;letter-spacing:-.01em}
+.cx a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--ink)}
+.cx a:hover{background:var(--ink);color:var(--paper)}
+.cxnote{font-size:12.5px;line-height:1.6;color:var(--mid);margin-top:24px;border-top:1px solid var(--edge);padding-top:14px}
+
+/* about */
+.ab-mail{text-align:right;font-size:13px;text-decoration:underline;margin-bottom:26px}
+.ab-name{font-size:clamp(34px,4.4vw,52px);font-weight:400;letter-spacing:-.025em;line-height:1;margin-bottom:14px}
+.ab-line{font-size:14px;line-height:1.5}
+.ab-gap{margin-top:14px}
+.ab-h{font-size:12px;font-weight:700;letter-spacing:.06em;margin:34px 0 14px;text-transform:uppercase}
+.ab-p{font-size:14px;line-height:1.62;max-width:78ch}
+.ab-p+.ab-p{margin-top:12px}
+.ab-sign{text-align:right;font-size:12px;font-weight:600;margin-top:14px}
+.ab-rule{border:0;border-top:1px solid var(--edge);margin:26px 0 0}
+.abfig{margin:26px 0 0;border:1px solid var(--edge)}
+.abfig img{display:block;width:100%;max-height:420px;object-fit:cover}
+.vn{font-weight:500}
+
+/* works table */
+.thead,.trow{display:grid;grid-template-columns:minmax(96px,1.1fr) minmax(72px,.8fr) minmax(0,3fr) 62px;gap:14px;align-items:baseline}
+.thead{font-size:11px;color:var(--mid);padding-bottom:5px;border-bottom:1px solid var(--ink)}
+.thead .r,.trow .r{text-align:right}
+.trow{width:100%;text-align:left;padding:6px 0;border-bottom:1px solid var(--edge);cursor:pointer;transition:background .1s}
+.trow:hover,.trow:focus-visible{background:var(--edge-2);outline:none}
+.tm{font-size:clamp(15px,1.7vw,21px);letter-spacing:-.01em;line-height:1.15}
+.tp{font-size:clamp(19px,2.5vw,31px);letter-spacing:-.02em;line-height:1.1}
+.td{font-size:clamp(17px,2.2vw,28px);letter-spacing:-.02em;text-align:right;font-variant-numeric:tabular-nums}
+.tgroupgap{height:26px}
+.tglabel{font-family:'Martian Mono',monospace;font-size:9.5px;font-weight:300;letter-spacing:.14em;text-transform:uppercase;color:var(--mid);margin-bottom:7px}
+.pdev{display:inline-block;font-family:'Martian Mono',monospace;font-size:9px;font-weight:300;letter-spacing:.12em;text-transform:uppercase;border:1px solid var(--ink);padding:3px 7px;margin-top:10px}
+
+.panel{display:none;border-bottom:1px solid var(--edge);padding:20px 0 28px}
+.panel.open{display:block}
+.pgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.6fr);gap:clamp(18px,3vw,44px);align-items:start}
+.pt{font-size:12px;font-weight:700;letter-spacing:.05em;text-transform:uppercase}
+.pmeta{font-size:12px;font-style:italic;color:var(--mid);margin-top:5px}
+.plink{font-size:13px;margin-top:12px;text-decoration:underline;cursor:pointer;display:inline-block;color:var(--ink)}
+a.plink:hover{background:var(--ink);color:var(--paper);text-decoration:none}
+.pcred{font-size:10.5px;line-height:1.65;color:var(--mid);margin-top:14px}
+.pd{font-size:13.5px;line-height:1.62}
+.reel{margin-top:20px}
+.strip{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding-bottom:10px;scrollbar-width:thin;scrollbar-color:var(--ink) transparent}
+.strip::-webkit-scrollbar{height:5px}
+.strip::-webkit-scrollbar-track{background:var(--edge-2)}
+.strip::-webkit-scrollbar-thumb{background:var(--ink)}
+.ph{margin:0;flex:0 0 auto;height:clamp(190px,26vh,300px);border:1px solid var(--edge);background:var(--edge-2);overflow:hidden;scroll-snap-align:start}
+.ph img{display:block;width:100%;height:100%;object-fit:cover}
+.reelbar{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-top:8px}
+.rcount{font-family:'Martian Mono',monospace;font-size:9.5px;font-weight:300;letter-spacing:.13em;text-transform:uppercase;color:var(--mid)}
+.rnav{display:flex;gap:6px}
+.rbtn{width:26px;height:26px;border:1px solid var(--ink);cursor:pointer;font-size:15px;line-height:1;display:flex;align-items:center;justify-content:center;background:var(--paper);color:var(--ink)}
+.rbtn:hover{background:var(--ink);color:var(--paper)}
+.ph span{font-family:'Martian Mono',monospace;font-size:9px;letter-spacing:.09em;text-transform:uppercase;color:var(--mid);background:var(--paper);padding:2px 5px}
+
+@media (max-width:720px){
+  .thead,.trow{grid-template-columns:1fr 54px;gap:8px}
+  .thead .c2,.thead .c1,.trow .tm.role{display:none}
+  .pgrid{grid-template-columns:1fr}
+  #winAbout,#winWorks,#winContact{top:12px;left:12px;width:calc(100vw - 24px);height:calc(100vh - 24px)}
+}
+@media (prefers-reduced-motion:reduce){.cell{transition:none}}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Qaun Huyen",
+"alternateName":["Quản Huyền","Vũ Lê Hoàng","Qaun Huyen"],
+"jobTitle":"Interdisciplinary artist","url":"https://qaun.homes/",
+"email":"info@qaun.homes","birthDate":"2002",
+"address":{"@type":"PostalAddress","addressLocality":"Hanoi","addressCountry":"VN"},
+"sameAs":["https://www.instagram.com/01.shenzi/","https://www.instagram.com/shenzi.00/","https://www.netchua.live/"]}
+</script>
+</head>
+<body>
+
+<header class="masthead">
+  <div>
+    <h1 class="name">Qaun Huyen</h1>
+    <p class="alias">Vũ Lê Hoàng — interdisciplinary artist</p>
+  </div>
+  <p class="meta">Hanoi, Vietnam<br>Moving image, sound, real-time systems<br>Available for commission</p>
+</header>
+
+<main class="stage">
+  <div class="board">
+    <div class="grid" id="grid" role="group" aria-label="Works and fragments as a number board"></div>
+    <div class="key">
+      <span><i class="sw w"></i>Work</span><span><i class="sw u"></i>Upcoming</span><span><i class="sw f"></i>Fragment</span><span><i class="sw"></i>A reading</span>
+    </div>
+  </div>
+  <div class="side">
+    <div class="readout">
+      <p class="rl" id="rl">Nothing held</p>
+      <p class="rt" id="rt">Every number carries a reading</p>
+      <p class="rd" id="rd">Ten hold a work. The rest hold nothing, and say so. The board is dealt again on every visit; the readings stay with their numbers.</p>
+    </div>
+    <p class="stmt">My work asks what holds together when nothing is at the middle. A structure stays standing not because something commands it from a center, but because its parts keep answering one another.</p>
+    <nav class="nav">
+      <button data-open="winWorks">Works</button>
+      <button data-open="winAbout">About</button>
+      <a href="https://www.netchua.live/" target="_blank" rel="noopener">NetChùa! ↗</a>
+      <button data-open="winContact">Contact</button>
+    </nav>
+  </div>
+</main>
+
+<footer class="foot">
+  <span>Board seed <span class="seed" id="seedout">—</span></span>
+  <span>Each load deals a different board</span>
+</footer>
+
+<!-- ABOUT WINDOW -->
+<section class="win" id="winAbout" role="dialog" aria-label="About my work">
+  <div class="chrome"><div class="lights"><i class="x" data-close></i><i></i><i></i></div><span class="wtitle">About my work</span></div>
+  <div class="wbody">
+    <p class="ab-mail">info@qaun.homes</p>
+    <h2 class="ab-name">Qaun Huyen</h2>
+    <p class="ab-line">Interdisciplinary artist<br>Vũ Lê Hoàng — Quản Huyền</p>
+    <p class="ab-line ab-gap">B.2002, Hanoi, Vietnam<br>Based in Hanoi, Vietnam</p>
+
+    <h3 class="ab-h">Statement</h3>
+    <p class="ab-p">My work asks what holds together when nothing is at the middle. A structure stays standing not because something commands it from a center, but because its parts keep answering one another. Remove the assumption of a center and what remains is not disorder but a slower order — distributed, harder to own, maintained rather than governed. What interests me is how hard people resist this: how reliably, placed in a field with no middle, we go on looking for one.</p>
+    <p class="ab-p">Gambling is where I find this most exposed. Not as vice or spectacle, but as a widely shared Vietnamese structure of feeling — <span class="vn">xóc đĩa</span>, <span class="vn">đá gà</span>, <span class="vn">bầu cua</span>, <span class="vn">tá lả</span>, <span class="vn">đề</span> and <span class="vn">lô</span> — an informal architecture of chance running underneath the formal one. What operates in these games is a distribution: independent events, weighted odds, no memory, no middle. What the player looks for is a center: the pattern, the hand that decides, the number that is due.</p>
+    <p class="ab-p">Two Vietnamese words hold the whole of this. <span class="vn">Suýt</span> — the almost, the outcome landing one position short — which is not a failure but a promise, and is engineered to feel like one. And <span class="vn">gỡ</span> — to play on in order to recover what was lost — which is the belief that the last round left a debt, that something is keeping the account, that the field owes and can be made to pay. Suýt produces the sense of being owed; gỡ is the going out to collect. Together they are the exact shape of the appetite for a center, and they survive every proof that no center exists.</p>
+    <p class="ab-p">I build audiovisual systems that owe nothing. No frame is authored, no node holds command; images and sound are outcomes of conditions negotiating with one another, held at the point just before they resolve. Nothing accumulates toward a payout, and each state is a round rather than a step. Drift and breakage are kept rather than corrected. To decentralise is not to dissolve — it is to redistribute attention, authorship, labour, and the right to decide what a room is for. My work stays with what remains when there is no house to appeal to and no center to blame: only the field, the next round, and the people who stay for it.</p>
+    <p class="ab-sign">Qaun Huyen</p>
+    <hr class="ab-rule">
+
+    <figure class="abfig"><img src="images/portrait/portrait-01.jpg" alt="Qaun Huyen" loading="lazy"></figure>
+    <h3 class="ab-h">Biography</h3>
+    <p class="ab-p">Vũ Lê Hoàng, who works as Qaun Huyen, was born in Hanoi, Vietnam, in 2002. He studied Printmaking at the Vietnam University of Fine Arts, Hanoi.</p>
+    <p class="ab-p">He works across moving image, sound and real-time systems. His practice takes Vietnamese vernacular gambling — xóc đĩa, đá gà, bầu cua, tá lả, đề and lô — as a working model of decentralised systems: fields in which outcomes are distributed, no center governs, and players persist in searching for one regardless. He builds audiovisual works that are run rather than composed, in which no frame is authored and no node holds command, and in which drift and breakage are kept as material rather than corrected.</p>
+    <p class="ab-p">His work has been exhibited in Hanoi, Vietnam, at Ngã Art Space, where he presented with 34 Studio in 2023, and at →← in 2025. He performs live audiovisual and noise sets under the collaborative aliases N//X//Q and TwoThirds, including at Otto Bar, VAR Gaming and Men HUB in Hanoi, and on Aaja Radio (London, UK).</p>
+    <p class="ab-p">He is a co-founder of 34 Studio (2021) and NetChùa! (2026), both self-organised and run without a single director. He works as a 3D and motion designer for clients including MTG (Stockholm, SE), EA (Singapore, SG) and Chatoyer (Hanoi, VN). He lives and works in Hanoi.</p>
+  </div>
+</section>
+
+<!-- CONTACT WINDOW -->
+<section class="win" id="winContact" role="dialog" aria-label="Contact">
+  <div class="chrome"><div class="lights"><i class="x" data-close></i><i></i><i></i></div><span class="wtitle">Contact</span></div>
+  <div class="wbody">
+    <dl class="cx">
+      <dt>Email</dt><dd><a href="mailto:info@qaun.homes">info@qaun.homes</a></dd>
+      <dt>Instagram</dt><dd><a href="https://instagram.com/01.shenzi" target="_blank" rel="noopener">@01.shenzi</a><br><a href="https://instagram.com/shenzi.00" target="_blank" rel="noopener">@shenzi.00</a></dd>
+      <dt>Website</dt><dd><a href="https://qaun.homes" target="_blank" rel="noopener">qaun.homes</a></dd>
+      <dt>Line</dt><dd><a href="tel:+84898555443">(+84) 898 555 443</a></dd>
+    </dl>
+    <p class="cxnote">Based in Hanoi, Vietnam. Available for commission, collaboration and live performance.</p>
+  </div>
+</section>
+
+<!-- WORKS WINDOW -->
+<section class="win" id="winWorks" role="dialog" aria-label="Works">
+  <div class="chrome"><div class="lights"><i class="x" data-close></i><i></i><i></i></div><span class="wtitle">Works</span></div>
+  <div class="wbody" id="worksBody"></div>
+</section>
+
+<script>
+/* ---------------- data ---------------- */
+const WORKS=[
+ {g:0,up:1,m:"SIMULATION",r:"Artist",p:"TTC",y:"2026",slug:"ttc",
+  d:"A continuous six-to-eight hour simulation with no player and no winning state. Five Ghosts — a gatekeeper who sells access to land permits, a cult leader who reads fortune for speculators, a developer building European castles in empty fields, a central bank that speaks only in figures, and a narrator who turns every rise and fall into a story — wager against one another inside an invented city of construction booms, credit injections and promised transformation. Each Ghost hosts a table where the others bet, and each adjusts its strategy from what it loses. Nothing is authored frame by frame; hierarchies, debts and collapses emerge from betting behaviour. The structure borrows from resource simulation and from roguelike: cycles repeat, difficulty compounds, and a prestige mechanic resets the world so it can boom and fall again.",
+  c:"With Áng Mây Huyền Diệu.\nReal-time simulation, generative sound.\nDuration 6–8 hours, continuous.",link:"Project outline upon request",med:[["ttc-01.jpg",1920,1080],["ttc-02.jpg",1920,1080],["ttc-03.jpg",1920,1080],["ttc-04.jpg",1920,1080],["ttc-05.jpg",1920,1080],["ttc-06.jpg",1920,1080],["ttc-07.jpg",1920,1080],["ttc-08.jpg",1920,1080],["ttc-09.jpg",1920,1080],["ttc-10.jpg",1920,1080],["ttc-11.jpg",1920,1080],["ttc-12.jpg",1920,1080],["ttc-13.jpg",1920,1080],["ttc-14.jpg",1920,1080],["ttc-15.jpg",1920,1080],["ttc-16.jpg",1920,1080],["ttc-17.jpg",1920,1080],["ttc-18.jpg",1920,1080],["ttc-19.jpg",1920,1080],["ttc-20.jpg",1920,1080],["ttc-21.jpg",1920,1080],["ttc-22.jpg",1920,1080],["ttc-23.jpg",1920,1080],["ttc-24.jpg",1920,1080]]},
+ {g:0,up:1,m:"RESEARCH",r:"Artist",p:"Chia",y:"2027",slug:"chia",
+  d:"Chia takes decentralisation as a working method rather than a subject. The question is not what a group can make together, but what it takes to make anything at all without a centre — and whether that is possible without either dissolving into informality or quietly re-forming a boss. The Vietnamese verb names several acts at once: chia bài, to deal cards; chia phần, to divide a finite share; chia việc, to divide labour; chia sẻ, to share as giving; chia rẽ, to split a group against itself. Sharing a burden and breaking a group apart are the same word with a different tail. Independent art in Vietnam is not centralised, it is ad hoc: roles unspoken, contracts rare, things made because someone stayed up. Credit accrues to whoever is most visible; labour to whoever cares most. Neither is anyone's decision, which is why neither can be contested. The project holds one narrow question: how little structure is required to keep the ad hoc from becoming extractive?",
+  c:"In development.",link:"Project outline upon request",med:[["chia-01.jpg",1920,1080],["chia-02.jpg",1920,1080],["chia-03.jpg",1920,1080]]},
+ {g:1,m:"EXHIBITION",r:"Artist",p:"→←",y:"2025",slug:"nguoc-xuoi",
+  d:"A group exhibition held in a private residence in Hanoi, August 2025.",
+  c:"Private residence, Hanoi, VN. August 2025.\nWith @_fxck_i_n_s_t_a_g_r_a_m_, @nan_sapwe, @lunengoc, @thgdan,\n@nguyenvn02, @theovio_, @tragi3o, @ababystep.archive.\nPhotography: Hưng (@baybyhung), Q. Hưng (@nan_sapwe), Ngọc.",link:"Documentation upon request",med:[["nguoc-xuoi-01.jpg",1440,1440],["nguoc-xuoi-02.jpg",2000,2666],["nguoc-xuoi-03.jpg",2000,2666],["nguoc-xuoi-04.jpg",2000,2666],["nguoc-xuoi-05.jpg",2000,1500],["nguoc-xuoi-06.jpg",2000,1500],["nguoc-xuoi-07.jpg",2000,1500],["nguoc-xuoi-08.jpg",2000,1500],["nguoc-xuoi-09.jpg",2000,3555],["nguoc-xuoi-10.jpg",2000,1125],["nguoc-xuoi-11.jpg",2000,1125],["nguoc-xuoi-12.jpg",2000,1125],["nguoc-xuoi-13.jpg",2000,1125],["nguoc-xuoi-14.jpg",2000,1125],["nguoc-xuoi-15.jpg",2000,1500],["nguoc-xuoi-16.jpg",2000,2666]]},
+ {g:1,m:"LIVE A/V",r:"Artist",p:"Bật Rễ",y:"2026",slug:"bat-re",
+  d:"NetChùa!02. A two-city edition running simultaneously in Hanoi and Saigon: one game art gallery, twelve poems, two on-site installations and seven live performances, streamed free via netchua.live. Performed as TwoThirds.",
+  c:"VAR Gaming, 389 La Thành, Hanoi, VN — and Everyday Studio, Saigon, VN.\n14.06.2026. ~111 on-site in Hanoi, ~50 in Saigon, ~200 online.\nPhotography & films: vlxd_m2.\nAdditional documentation: dcthng199999999, blueballoonbaby, lunengoc.",link:"netchua.live ↗",url:"https://www.netchua.live/",med:[["bat-re-01.jpg",2000,1497],["bat-re-02.jpg",675,817],["bat-re-03.jpg",687,358],["bat-re-04.jpg",2000,1333],["bat-re-05.jpg",2000,1333],["bat-re-06.jpg",2000,1333],["bat-re-07.jpg",480,360],["bat-re-08.jpg",480,360],["bat-re-09.jpg",2000,1497],["bat-re-10.jpg",2000,1333]]},
+ {g:1,m:"BROADCAST",r:"Artist",p:"Metal Box",y:"2026",slug:"metal-box",
+  d:"An experimental and dance set by NetChùa!, with original arrangements by Nananarc, Xcerpt and Quản Huyền, followed by a mini DJ set from Lưu Dạ Hưng. The set draws on the daily lives and memories of ordinary Vietnamese people: karaoke, Vietnam Airlines, real estate, TikTok voiceovers, and a shared frustration with curatorial word salad.",
+  c:"Aaja Radio, London, UK. 14.05.2026. Recorded remotely.\nArtwork by @xcerpt.ts, featuring an image by @01.shenzi of a Myanmar\nhorse string puppet at the Vietnam Museum of Ethnology.",link:"Listen on Mixcloud ↗",url:"https://www.mixcloud.com/Aajamusic/metal-box-w-netchualive-aaja-channel-1-14-05-26/",med:[["metal-box-01.jpg",677,893]]},
+ {g:1,m:"LIVE A/V",r:"Artist",p:"Virtual Bleeps",y:"2026",slug:"virtual-bleeps",
+  d:"A showcase for the virtuel free arts lab. Deep electronics, chaos, and order.",
+  c:"Otto Bar, 18 Thanh Niên, Hanoi, VN. 25 July, 9pm — late.\nWith @tanohi_boi, @xcerpt.ts, @nananarc.art, @canicule8, @vitro_710, @luk_lord.",link:"Recording upon request",med:[["virtual-bleeps-01.jpg",2000,1500],["virtual-bleeps-02.jpg",1536,1152],["virtual-bleeps-03.jpg",1536,1152],["virtual-bleeps-04.jpg",2000,1500],["virtual-bleeps-05.jpg",1536,1152]]},
+ {g:1,m:"LIVE A/V",r:"Artist",p:"Quẩy Rồng",y:"2026",slug:"quay-rong",
+  d:"NetChùa!01. The first edition, held on the third floor of a cyber cafe in Hàng Da: eight gallery exhibitions, seven live performances and four e-sports streams by young artists in Hanoi, Huế and Saigon, as well as the UK and Czechia, streamed free via netchua.live.",
+  c:"Men Hub Cyber Hàng Da, Hàng Da Trade Centre, Hanoi, VN.\n28.02.2026, 8:00 — late. 140 online views, 20 on-site.\nPoster by @xcerpt.trangsach.\nPhotography: Ngọc Mai / Mieke.",link:"netchua.live ↗",url:"https://www.netchua.live/",med:[["quay-rong-01.jpg",1440,1080],["quay-rong-02.jpg",1440,1080],["quay-rong-03.jpg",1440,1080],["quay-rong-04.jpg",1080,1350]]},
+ {g:1,m:"EXHIBITION",r:"Artist",p:"Thoả",y:"2023",slug:"thoa",
+  d:"A group exhibition. THOẢ holds a cluster of Vietnamese compounds at once — thoả mãn, to satisfy; thoả thuận, to agree; thoả hiệp, to compromise; thoả ước, to fulfil a wish. Each work settles somewhere in that range: what an artist satisfies, concedes, or agrees to in order to make anything at all. Presented with 34 Studio, within baybyhung's field. Visitors were asked to bring headphones.",
+  c:"NGÃ Art Space, TÁCH SPACES, 20 Hai Bà Trưng, Hoàn Kiếm, Hanoi, VN.\n02.09 — 17.09.2023. Free entry.\nExhibition artists: Sơn, Linh, Hưng, Giang.\nPresented with 34 Studio: Đan, Thành, Hoàng, Ngọc, Hưng (@baybyhung).\nPhotography: Sơn, Hưng (@baybyhung).",link:"Documentation upon request",med:[["thoa-01.jpg",1440,1440],["thoa-02.jpg",1440,1440],["thoa-03.jpg",1440,1440],["thoa-04.jpg",1440,1440],["thoa-05.jpg",1440,1440],["thoa-06.jpg",1440,1425],["thoa-07.jpg",941,1672],["thoa-08.jpg",1440,1440],["thoa-09.jpg",1152,1152],["thoa-10.jpg",1440,1440],["thoa-11.jpg",1440,1800],["thoa-12.jpg",1440,1800]]},
+ {g:2,m:"PLATFORM",r:"Co-founder",p:"NetChùa!",y:"2026",slug:"netchua",
+  d:"A grassroots platform for art, knowledge sharing and gaming, which treats internet cafes as low-cost multi-functional cultural spaces. Events run on-site and simultaneously via netchua.live, so artists and audiences can take part from anywhere. NetChùa! treats the experiment in experimental as a verb: it prioritises learning, cooperation and exchange over competition, and encourages methods that bypass the pursuit of excellence, social acceptance and seniority. It operates non-profit and donation-only, publishes its income and expenses, and shares revenue back in equal parts.",
+  c:"Hanoi, VN. Ongoing, from 2026.\nTeam: Xcerpt, Nananarc, Quản Huyền, Mieke, angmayhuyendieu, Whoopzy, Lưu Dạ Hưng.\nCollaborators: Tàu Hũ Ky Collective, Chữ Cháy.",link:"netchua.live ↗",url:"https://www.netchua.live/",med:[["netchua-01.jpg",1440,1800],["netchua-02.jpg",2000,1333],["netchua-03.jpg",2000,1333],["netchua-04.jpg",2000,1500],["netchua-05.jpg",2000,1500],["netchua-06.jpg",2000,1330],["netchua-07.jpg",2000,1330],["netchua-08.jpg",2000,1330],["netchua-09.jpg",1440,1020],["netchua-10.jpg",1080,1346],["netchua-11.jpg",1080,1350],["netchua-12.jpg",2000,1497],["netchua-13.jpg",1440,960],["netchua-14.jpg",2000,2747],["netchua-15.jpg",2000,2499],["netchua-16.jpg",2000,2499]]},
+ {g:2,m:"STUDIO",r:"Co-founder",p:"34 Studio",y:"2021",slug:"34-studio",
+  d:"34 Studio works across materials without ranking them: steel, ceramic, cloth, sound, light, code and the body pass through the same process. A project is built, shown and dismantled inside one address — the workshop is also the exhibition floor and the stage. It is not a gallery and keeps no permanent collection; what it keeps is the working record — process notes, test footage, failed casts, the versions that did not hold — consulted to decide what to try next, not to reissue. It began in 2021 because Hanoi had no infrastructure for work that resists category, so the studio took on the whole chain itself: production, presentation, documentation, and paying the people involved. Collaborators are chosen for making the studio slightly uncomfortable; comfort is a reliable sign of repetition.",
+  c:"Hanoi, VN. Ongoing, from 2021.\nArtists: Đan, Thành, Hoàng, Ngọc, Hưng (@baybyhung).\nPhotography: Trúc Linh, Ngọc, Hưng (@baybyhung), Đạt, Long.",link:"Documentation upon request",med:[["34-studio-01.jpg",1440,1440],["34-studio-02.jpg",1440,1440],["34-studio-03.jpg",1138,640],["34-studio-04.jpg",1440,1440],["34-studio-05.jpg",1440,1440],["34-studio-06.jpg",1440,1440],["34-studio-07.jpg",1440,1440],["34-studio-08.jpg",1440,1440],["34-studio-09.jpg",1440,958],["34-studio-10.jpg",1440,1564],["34-studio-11.jpg",1440,1440],["34-studio-12.jpg",1440,1440],["34-studio-13.jpg",1440,1421],["34-studio-14.jpg",1440,1800],["34-studio-15.jpg",1244,829]]}
+];
+
+/* ---------------- works table ---------------- */
+const wb=document.getElementById('worksBody');
+const GLABEL={0:"Upcoming",1:"Works and performances",2:"Platforms and studios"};
+const head=g=>`<p class="tglabel">${GLABEL[g]}</p><div class="thead"><span class="c1">Medium</span><span class="c2">Role</span><span>Project</span><span class="r">Date</span></div>`;
+let html=head(WORKS[0].g);
+WORKS.forEach((w,i)=>{
+  if(i>0&&w.g!==WORKS[i-1].g)html+=`<div class="tgroupgap"></div>`+head(w.g);
+  html+=`<button class="trow" data-row="${i}" aria-expanded="false">
+    <span class="tm c1">${w.m}</span><span class="tm role c2">${w.r}</span>
+    <span class="tp">${w.p}</span><span class="td">${w.y}</span></button>
+    <div class="panel" id="p${i}">
+      <div class="pgrid">
+        <div>
+          <p class="pt">${w.p}</p>
+          <p class="pmeta">(${w.y}) ${w.m.toLowerCase()}</p>
+          ${w.up?'<p class="pdev">In development — demo material only</p>':''}
+          ${w.url?`<a class="plink" href="${w.url}" target="_blank" rel="noopener">${w.link}</a>`:`<p class="plink">${w.link}</p>`}
+          <p class="pcred">${w.c.replace(/\n/g,'<br>')}</p>
+        </div>
+        <p class="pd">${w.d}</p>
+      </div>
+      <div class="reel"><div class="strip">${w.med.map((m,k)=>`<figure class="ph" style="aspect-ratio:${m[1]}/${m[2]}"><img src="images/${w.slug}/${m[0]}" alt="${w.p}, documentation ${k+1}" loading="lazy"></figure>`).join('')}</div><div class="reelbar"><span class="rcount">${w.med.length} image${w.med.length>1?"s":""}</span>${w.med.length>1?`<span class="rnav"><button class="rbtn" data-dir="-1" aria-label="Previous">&lsaquo;</button><button class="rbtn" data-dir="1" aria-label="Next">&rsaquo;</button></span>`:""}</div></div>
+    </div>`;
+});
+wb.innerHTML=html;
+
+wb.addEventListener('click',ev=>{
+  const b=ev.target.closest('.rbtn'); if(!b)return;
+  ev.stopPropagation();
+  const s=b.closest('.reel').querySelector('.strip');
+  s.scrollBy({left:(+b.dataset.dir)*Math.max(220,s.clientWidth*0.8),behavior:'smooth'});
+});
+wb.querySelectorAll('.trow').forEach(r=>{
+  r.addEventListener('click',()=>{
+    const p=document.getElementById('p'+r.dataset.row);
+    const o=p.classList.toggle('open');
+    r.setAttribute('aria-expanded',o);
+  });
+});
+
+/* ---------------- windows ---------------- */
+let z=100;
+const open=id=>{const w=document.getElementById(id);w.classList.add('open');w.style.zIndex=++z;};
+document.querySelectorAll('[data-open]').forEach(b=>b.addEventListener('click',()=>open(b.dataset.open)));
+document.querySelectorAll('[data-close]').forEach(b=>b.addEventListener('click',e=>{e.stopPropagation();b.closest('.win').classList.remove('open');}));
+document.querySelectorAll('.win').forEach(w=>{
+  w.addEventListener('mousedown',()=>{w.style.zIndex=++z;});
+  const bar=w.querySelector('.chrome');
+  let sx,sy,ox,oy,drag=false;
+  bar.addEventListener('mousedown',e=>{
+    if(e.target.hasAttribute('data-close'))return;
+    drag=true;sx=e.clientX;sy=e.clientY;
+    const r=w.getBoundingClientRect();ox=r.left;oy=r.top;
+    w.style.left=ox+'px';w.style.top=oy+'px';e.preventDefault();
+  });
+  window.addEventListener('mousemove',e=>{
+    if(!drag)return;
+    w.style.left=Math.max(-40,ox+e.clientX-sx)+'px';
+    w.style.top=Math.max(0,oy+e.clientY-sy)+'px';
+  });
+  window.addEventListener('mouseup',()=>drag=false);
+});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')document.querySelectorAll('.win.open').forEach(w=>w.classList.remove('open'));});
+
+/* ---------------- readings ---------------- */
+/* Every number carries a reading, the way numbers carry meaning in a dream book.
+   Assigned by number, not by shuffle: the board deals differently each load,
+   but a given number always says the same thing. */
+const PHIL=[
+ ["No one is dealing","A distribution has no hand behind it. Whatever order you find here, you brought."],
+ ["The field remembers nothing","Each round begins from zero. Only the player carries the account forward."],
+ ["Nothing is owed","A loss creates no claim on what comes next. Gỡ is the belief that it does."],
+ ["The middle is a habit","Not a property of the structure. Something we install to make it legible."],
+ ["Maintained, not governed","What holds this together is upkeep, not command."],
+ ["Every part answers another","That is the whole mechanism. There is no additional part that decides."],
+ ["To decentralise is not to dissolve","It is to redistribute: attention, authorship, labour, and the right to decide."],
+ ["The wish outlives the center","Remove the house and the search for a house continues."],
+ ["Empty is the usual state","Most numbers hold nothing. This is not the exception to the system, it is the system."],
+ ["A pattern is a thing you make","The sequence did not produce it. You did, and then you bet on it."],
+ ["Weight without a middle","Load can be carried by a field. It does not need a column."],
+ ["A slower order","What remains after the center is removed is not disorder. It is harder to own."],
+ ["Nothing accumulates","Attention accumulates. Probability does not."],
+ ["The next round is not the one","No round is the one. That is what makes the next one possible."],
+ ["One position short","Suýt is not a failure. It is a promise, and it is engineered to feel like one."],
+ ["Almost is manufactured","The near-miss has an author. The author is not where the player is looking."],
+ ["Labour is where the center hides","Ask who maintains it. That is usually the middle you were told did not exist."],
+ ["Credit without a single author","The hardest problem in working this way. Not a technical one."],
+ ["Disagreement is structure","A group that cannot hold it has a center, whatever it calls itself."],
+ ["Porous","The boundary is where the negotiation happens. Sealing it is a way of deciding alone."],
+ ["Who decides what a room is for","This question is the whole of it."],
+ ["The people who stay","When there is no house to appeal to, this is what is left. It is enough."],
+ ["Drift is not failure","It is the system telling you what it is, rather than what you set it to be."],
+ ["Kept rather than corrected","The deviation is the material. Correcting it is a preference for the plan."],
+ ["A round, not a step","Steps lead somewhere. Rounds return."],
+ ["No node holds command","Each one passes what it receives. Command is a description added afterwards."],
+ ["The house is also a node","It takes a fixed cut. It does not decide the outcome. Both are true."],
+ ["Read as a text","Two digits, and a street reads them as a message. Meaning is made downstream."],
+ ["Independent events","The word independent is doing all the work, and nobody believes it."],
+ ["Nothing arrives finished","Each state is a stake placed on the next."]
+];
+const reading=n=>PHIL[(n*37+11)%PHIL.length];
+
+/* ---------------- board ---------------- */
+const fragKinds=[["Test render","Discarded output kept as material."],["System state","Capture of a patch mid-run."],["Still","Single frame pulled from a live set."],["Broken pass","Output after the system drifted."],["Note","Working text, not for publication."],["Loop","Fragment that never resolved."]];
+const grid=document.getElementById('grid'),rl=document.getElementById('rl'),rt=document.getElementById('rt'),rd=document.getElementById('rd');
+document.getElementById('seedout').textContent=Math.floor(Math.random()*9000)+1000;
+
+const FRAGS=24,taken=new Set();
+while(taken.size<WORKS.length+FRAGS)taken.add(Math.floor(Math.random()*100));
+const all=[...taken],map={};
+all.slice(0,WORKS.length).forEach((n,i)=>map[n]={k:'work',i:i,up:WORKS[i].up,t:WORKS[i].p,d:WORKS[i].up?'In development. Demo material only.':WORKS[i].c.split('\n')[0]});
+all.slice(WORKS.length).forEach((n,i)=>{const f=fragKinds[i%fragKinds.length];map[n]={k:'frag',t:f[0]+" "+String(i+1).padStart(2,'0'),d:f[1]};});
+const workSlots=all.slice(0,WORKS.length);
+
+const cells=[];
+for(let i=0;i<100;i++){
+  const n=String(i).padStart(2,'0'),e=map[i];
+  const c=document.createElement(e&&e.k==='work'?'button':(e?'button':'div'));
+  c.className='cell'+(e?' '+e.k+(e.up?' upc':''):'');c.textContent=n;
+  const r=reading(i);
+  if(e&&e.k==='work'){
+    c.setAttribute('aria-label',e.t);
+    const lab=e.up?'Upcoming — number ':'Work — number ';
+    const show=()=>{rl.textContent=lab+n;rt.textContent=e.t;rd.textContent=e.d;};
+    c.addEventListener('mouseenter',show);c.addEventListener('focus',show);
+    c.addEventListener('click',()=>{
+      open('winWorks');
+      const p=document.getElementById('p'+e.i),row=wb.querySelector('[data-row="'+e.i+'"]');
+      wb.querySelectorAll('.panel.open').forEach(x=>x.classList.remove('open'));
+      p.classList.add('open');row.setAttribute('aria-expanded','true');
+      row.scrollIntoView({block:'center',behavior:'smooth'});
+    });
+  }else{
+    const lab=e?'Fragment · '+e.t:'Number '+n+' — holds nothing';
+    const show=()=>{rl.textContent=lab;rt.textContent=r[0];rd.textContent=r[1];};
+    if(e){c.setAttribute('aria-label',r[0]);c.addEventListener('focus',show);}
+    c.addEventListener('mouseenter',show);
+  }
+  grid.appendChild(c);cells.push(c);
+}
+
+if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+  const target=workSlots[Math.floor(Math.random()*workSlots.length)];
+  let miss=target+(Math.random()<.5?-1:1);
+  if(miss<0||miss>99)miss=target+1;
+  const path=[];let p=Math.floor(Math.random()*100);
+  for(let s=0;s<26;s++){p=(p+Math.floor(Math.random()*17)+3)%100;path.push(p);}
+  path.push(miss);
+  let i=0;
+  const step=()=>{
+    if(i>0)cells[path[i-1]].classList.remove('flick');
+    if(i<path.length){cells[path[i]].classList.add('flick');i++;setTimeout(step,60+i*11);}
+    else{
+      const m=path[path.length-1];
+      cells[m].classList.remove('flick');cells[m].classList.add('near');cells[target].classList.add('hit');
+      rl.textContent='Landed on '+String(m).padStart(2,'0');
+      rt.textContent='One short';
+      rd.textContent='The board stopped beside a work rather than on it. Suýt: the almost, engineered to feel like a promise.';
+      setTimeout(()=>{cells[m].classList.remove('near');cells[target].classList.remove('hit');},2600);
+    }
+  };
+  setTimeout(step,700);
+}
+</script>
+</body>
+</html>

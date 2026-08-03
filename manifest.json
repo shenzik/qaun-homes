@@ -1,0 +1,787 @@
+{
+ "nguoc-xuoi": [
+  {
+   "file": "nguoc-xuoi-01.jpg",
+   "orig": "Cover by hung.jpeg",
+   "w": 1440,
+   "h": 1440,
+   "ratio": 1.0
+  },
+  {
+   "file": "nguoc-xuoi-02.jpg",
+   "orig": "LE HOANG AW 1.jpg",
+   "w": 2000,
+   "h": 2666,
+   "ratio": 0.75
+  },
+  {
+   "file": "nguoc-xuoi-03.jpg",
+   "orig": "LE HOANG AW 2.JPG",
+   "w": 2000,
+   "h": 2666,
+   "ratio": 0.75
+  },
+  {
+   "file": "nguoc-xuoi-04.jpg",
+   "orig": "LE HOANG AW 3.JPG",
+   "w": 2000,
+   "h": 2666,
+   "ratio": 0.75
+  },
+  {
+   "file": "nguoc-xuoi-05.jpg",
+   "orig": "LE HOANG AW 4.JPG",
+   "w": 2000,
+   "h": 1500,
+   "ratio": 1.33
+  },
+  {
+   "file": "nguoc-xuoi-06.jpg",
+   "orig": "LE HOANG AW 5.JPG",
+   "w": 2000,
+   "h": 1500,
+   "ratio": 1.33
+  },
+  {
+   "file": "nguoc-xuoi-07.jpg",
+   "orig": "LE HOANG AW 6.JPG",
+   "w": 2000,
+   "h": 1500,
+   "ratio": 1.33
+  },
+  {
+   "file": "nguoc-xuoi-08.jpg",
+   "orig": "LE HOANG AW 7.JPG",
+   "w": 2000,
+   "h": 1500,
+   "ratio": 1.33
+  },
+  {
+   "file": "nguoc-xuoi-09.jpg",
+   "orig": "LE HOANG AW 8.jpg",
+   "w": 2000,
+   "h": 3555,
+   "ratio": 0.56
+  },
+  {
+   "file": "nguoc-xuoi-10.jpg",
+   "orig": "exhibition 1.jpg",
+   "w": 2000,
+   "h": 1125,
+   "ratio": 1.78
+  },
+  {
+   "file": "nguoc-xuoi-11.jpg",
+   "orig": "exhibition 2.jpg",
+   "w": 2000,
+   "h": 1125,
+   "ratio": 1.78
+  },
+  {
+   "file": "nguoc-xuoi-12.jpg",
+   "orig": "exhibition 3.jpg",
+   "w": 2000,
+   "h": 1125,
+   "ratio": 1.78
+  },
+  {
+   "file": "nguoc-xuoi-13.jpg",
+   "orig": "exhibition 4.jpg",
+   "w": 2000,
+   "h": 1125,
+   "ratio": 1.78
+  },
+  {
+   "file": "nguoc-xuoi-14.jpg",
+   "orig": "exhibition 5.jpg",
+   "w": 2000,
+   "h": 1125,
+   "ratio": 1.78
+  },
+  {
+   "file": "nguoc-xuoi-15.jpg",
+   "orig": "exhibition 6.JPG",
+   "w": 2000,
+   "h": 1500,
+   "ratio": 1.33
+  },
+  {
+   "file": "nguoc-xuoi-16.jpg",
+   "orig": "exhibition 7.JPG",
+   "w": 2000,
+   "h": 2666,
+   "ratio": 0.75
+  }
+ ],
+ "34-studio": [
+  {
+   "file": "34-studio-01.jpg",
+   "orig": "#U0111an (2).jpeg",
+   "w": 1440,
+   "h": 1440,
+   "ratio": 1.0
+  },
+  {
+   "file": "34-studio-02.jpg",
+   "orig": "#U0111an.jpeg",
+   "w": 1440,
+   "h": 1440,
+   "ratio": 1.0
+  },
+  {
+   "file": "34-studio-03.jpg",
+   "orig": "551443501_18058256402431634_3831857011304221405_n.jpeg",
+   "w": 1138,
+   "h": 640,
+   "ratio": 1.78
+  },
+  {
+   "file": "34-studio-04.jpg",
+   "orig": "619190883_18090490403069222_5007061262558099739_n.jpeg",
+   "w": 1440,
+   "h": 1440,
+   "ratio": 1.0
+  },
+  {
+   "file": "34-studio-05.jpg",
+   "orig": "622684052_18072667841119769_5311462300682556947_n.jpeg",
+   "w": 1440,
+   "h": 1440,
+   "ratio": 1.0
+  },
+  {
+   "file": "34-studio-06.jpg",
+   "orig": "Photo by 34. ART STUD!O on April 20, 2021 (1).jpeg",
+   "w": 1440,
+   "h": 1440,
+   "ratio": 1.0
+  },
+  {
+   "file": "34-studio-07.jpg",
+   "orig": "Photo by 34. ART STUD!O on April 20, 2021 (2).jpeg",
+   "w": 1440,
+   "h": 1440,
+   "ratio": 1.0
+  },
+  {
+   "file": "34-studio-08.jpg",
+   "orig": "Photo by 34. ART STUD!O on April 20, 2021.jpeg",
+   "w": 1440,
+   "h": 1440,
+   "ratio": 1.0
+  },
+  {
+   "file": "34-studio-09.jpg",
+   "orig": "Th#U00e0nh.jpeg",
+   "w": 1440,
+   "h": 958,
+   "ratio": 1.5
+  },
+  {
+   "file": "34-studio-10.jpg",
+   "orig": "h#U01b0ng ho#U00e0ng.jpeg",
+   "w": 1440,
+   "h": 1564,
+   "ratio": 0.92
+  },
+  {
+   "file": "34-studio-11.jpg",
+   "orig": "h#U01b0ng.jpeg",
+   "w": 1440,
+   "h": 1440,
+   "ratio": 1.0
+  },
+  {
+   "file": "34-studio-12.jpg",
+   "orig": "ho#U00e0ng (2).jpeg",
+   "w": 1440,
+   "h": 1440,
+   "ratio": 1.0
+  },
+  {
+   "file": "34-studio-13.jpg",
+   "orig": "ho#U00e0ng.jpeg",
+   "w": 1440,
+   "h": 1421,
+   "ratio": 1.01
+  },
+  {
+   "file": "34-studio-14.jpg",
+   "orig": "ng#U1ecdc.jpeg",
+   "w": 1440,
+   "h": 1800,
+   "ratio": 0.8
+  },
+  {
+   "file": "34-studio-15.jpg",
+   "orig": "th#U1ea3m.jpeg",
+   "w": 1244,
+   "h": 829,
+   "ratio": 1.5
+  }
+ ],
+ "quay-rong": [
+  {
+   "file": "quay-rong-01.jpg",
+   "orig": "PICT0086.jpg",
+   "w": 1440,
+   "h": 1080,
+   "ratio": 1.33
+  },
+  {
+   "file": "quay-rong-02.jpg",
+   "orig": "PICT0092.jpg",
+   "w": 1440,
+   "h": 1080,
+   "ratio": 1.33
+  },
+  {
+   "file": "quay-rong-03.jpg",
+   "orig": "PICT0095.jpg",
+   "w": 1440,
+   "h": 1080,
+   "ratio": 1.33
+  },
+  {
+   "file": "quay-rong-04.jpg",
+   "orig": "Photo shared by NetCh#U00f9a! on February 22, 2026 tagging @shenzi.00, @daneo.anhquan, @nananarc.art, @kiliging, @mintedframe, @vuvu.zelaa, @ngnc.mai, @xcerpt.ts, @aliceeeismyusername, @jtonnnnn, @phanrv, @erotechre, @fal.jpeg",
+   "w": 1080,
+   "h": 1350,
+   "ratio": 0.8
+  }
+ ],
+ "bat-re": [
+  {
+   "file": "bat-re-01.jpg",
+   "orig": "0Main 1.jpeg",
+   "w": 2000,
+   "h": 1497,
+   "ratio": 1.34
+  },
+  {
+   "file": "bat-re-02.jpg",
+   "orig": "Screenshot 2026-08-03 211040.png",
+   "w": 675,
+   "h": 817,
+   "ratio": 0.83
+  },
+  {
+   "file": "bat-re-03.jpg",
+   "orig": "Screenshot 2026-08-03 211108.png",
+   "w": 687,
+   "h": 358,
+   "ratio": 1.92
+  },
+  {
+   "file": "bat-re-04.jpg",
+   "orig": "Stage 1.JPG",
+   "w": 2000,
+   "h": 1333,
+   "ratio": 1.5
+  },
+  {
+   "file": "bat-re-05.jpg",
+   "orig": "Stage 2.JPG",
+   "w": 2000,
+   "h": 1333,
+   "ratio": 1.5
+  },
+  {
+   "file": "bat-re-06.jpg",
+   "orig": "Stage 3.JPG",
+   "w": 2000,
+   "h": 1333,
+   "ratio": 1.5
+  },
+  {
+   "file": "bat-re-07.jpg",
+   "orig": "Stage 4.jpeg",
+   "w": 480,
+   "h": 360,
+   "ratio": 1.33
+  },
+  {
+   "file": "bat-re-08.jpg",
+   "orig": "Stage 5.jpeg",
+   "w": 480,
+   "h": 360,
+   "ratio": 1.33
+  },
+  {
+   "file": "bat-re-09.jpg",
+   "orig": "Stage 6.jpeg",
+   "w": 2000,
+   "h": 1497,
+   "ratio": 1.34
+  },
+  {
+   "file": "bat-re-10.jpg",
+   "orig": "live.JPG",
+   "w": 2000,
+   "h": 1333,
+   "ratio": 1.5
+  }
+ ],
+ "chia": [
+  {
+   "file": "chia-01.jpg",
+   "orig": "code 3443.png",
+   "w": 1920,
+   "h": 1080,
+   "ratio": 1.78
+  },
+  {
+   "file": "chia-02.jpg",
+   "orig": "code 3444.png",
+   "w": 1920,
+   "h": 1080,
+   "ratio": 1.78
+  },
+  {
+   "file": "chia-03.jpg",
+   "orig": "code 3445.png",
+   "w": 1920,
+   "h": 1080,
+   "ratio": 1.78
+  }
+ ],
+ "metal-box": [
+  {
+   "file": "metal-box-01.jpg",
+   "orig": "Cover.png",
+   "w": 677,
+   "h": 893,
+   "ratio": 0.76
+  }
+ ],
+ "netchua": [
+  {
+   "file": "netchua-01.jpg",
+   "orig": "Photo by NetCh#U00f9a! on February 26, 2026.jpeg",
+   "w": 1440,
+   "h": 1800,
+   "ratio": 0.8
+  },
+  {
+   "file": "netchua-02.jpg",
+   "orig": "Photo by NetCh#U00f9a! on June 22, 2026. May be a video game screenshot of text.jpeg",
+   "w": 2000,
+   "h": 1333,
+   "ratio": 1.5
+  },
+  {
+   "file": "netchua-03.jpg",
+   "orig": "Photo by NetCh#U00f9a! on June 22, 2026. May be an image of one or more people, lighting, crowd and text that says Ab A.jpeg",
+   "w": 2000,
+   "h": 1333,
+   "ratio": 1.5
+  },
+  {
+   "file": "netchua-04.jpg",
+   "orig": "Photo by NetCh#U00f9a! on June 24, 2026. May be an image of text (1).jpeg",
+   "w": 2000,
+   "h": 1500,
+   "ratio": 1.33
+  },
+  {
+   "file": "netchua-05.jpg",
+   "orig": "Photo by NetCh#U00f9a! on June 24, 2026. May be an image of text.jpeg",
+   "w": 2000,
+   "h": 1500,
+   "ratio": 1.33
+  },
+  {
+   "file": "netchua-06.jpg",
+   "orig": "Photo by NetCh#U00f9a! on June 24, 2026. May be an image of violin, cello and text.jpeg",
+   "w": 2000,
+   "h": 1330,
+   "ratio": 1.5
+  },
+  {
+   "file": "netchua-07.jpg",
+   "orig": "Photo by NetCh#U00f9a! on June 25, 2026. May be a video game screenshot of crowd and text.jpeg",
+   "w": 2000,
+   "h": 1330,
+   "ratio": 1.5
+  },
+  {
+   "file": "netchua-08.jpg",
+   "orig": "Photo by NetCh#U00f9a! on June 25, 2026. May be an image of television, tambourine, microphone and text.jpeg",
+   "w": 2000,
+   "h": 1330,
+   "ratio": 1.5
+  },
+  {
+   "file": "netchua-09.jpg",
+   "orig": "Photo by T#U00e0u H#U1ee7 Ky Collective on June 24, 2026. May be pop art of poster and text.jpeg",
+   "w": 1440,
+   "h": 1020,
+   "ratio": 1.41
+  },
+  {
+   "file": "netchua-10.jpg",
+   "orig": "Photo shared by Ch#U1eef Ch#U00e1y  on May 19, 2026 tagging @tauhuky.hotpot, and @netchua_live.jpeg",
+   "w": 1080,
+   "h": 1346,
+   "ratio": 0.8
+  },
+  {
+   "file": "netchua-11.jpg",
+   "orig": "Photo shared by NetCh#U00f9a! on February 22, 2026 tagging @shenzi.00, @daneo.anhquan, @nananarc.art, @kiliging, @mintedframe, @vuvu.zelaa, @ngnc.mai, @xcerpt.ts, @aliceeeismyusername, @jtonnnnn, @phanrv, @erotechre,  (1).jpeg",
+   "w": 1080,
+   "h": 1350,
+   "ratio": 0.8
+  },
+  {
+   "file": "netchua-12.jpg",
+   "orig": "Photo shared by NetCh#U00f9a! on June 25, 2026 tagging @xcerpt.ts, and @01.shenzi. May be an image of text.jpeg",
+   "w": 2000,
+   "h": 1497,
+   "ratio": 1.34
+  },
+  {
+   "file": "netchua-13.jpg",
+   "orig": "Photo shared by T#U00e0u H#U1ee7 Ky Collective on June 24, 2026 tagging @netchua_live. May be an image of one or more people, television, screen and text that says #U0e15#U0e1a#U0e25.jpeg",
+   "w": 1440,
+   "h": 960,
+   "ratio": 1.5
+  },
+  {
+   "file": "netchua-14.jpg",
+   "orig": "main logo.png",
+   "w": 2000,
+   "h": 2747,
+   "ratio": 0.73
+  },
+  {
+   "file": "netchua-15.jpg",
+   "orig": "poster netchua 2(2).jpeg",
+   "w": 2000,
+   "h": 2499,
+   "ratio": 0.8
+  },
+  {
+   "file": "netchua-16.jpg",
+   "orig": "poster netchua 2.jpeg",
+   "w": 2000,
+   "h": 2499,
+   "ratio": 0.8
+  }
+ ],
+ "portrait": [
+  {
+   "file": "portrait-01.jpg",
+   "orig": "Profile 1.jpg",
+   "w": 2000,
+   "h": 2800,
+   "ratio": 0.71
+  },
+  {
+   "file": "portrait-02.jpg",
+   "orig": "profile 2.jpg",
+   "w": 2000,
+   "h": 2000,
+   "ratio": 1.0
+  },
+  {
+   "file": "portrait-03.jpg",
+   "orig": "profile 3.jpg",
+   "w": 2000,
+   "h": 1600,
+   "ratio": 1.25
+  }
+ ],
+ "ttc": [
+  {
+   "file": "ttc-01.jpg",
+   "orig": "1.png",
+   "w": 1920,
+   "h": 1080,
+   "ratio": 1.78
+  },
+  {
+   "file": "ttc-02.jpg",
+   "orig": "10.png",
+   "w": 1920,
+   "h": 1080,
+   "ratio": 1.78
+  },
+  {
+   "file": "ttc-03.jpg",
+   "orig": "11.png",
+   "w": 1920,
+   "h": 1080,
+   "ratio": 1.78
+  },
+  {
+   "file": "ttc-04.jpg",
+   "orig": "12(1).png",
+   "w": 1920,
+   "h": 1080,
+   "ratio": 1.78
+  },
+  {
+   "file": "ttc-05.jpg",
+   "orig": "12.png",
+   "w": 1920,
+   "h": 1080,
+   "ratio": 1.78
+  },
+  {
+   "file": "ttc-06.jpg",
+   "orig": "13(1).png",
+   "w": 1920,
+   "h": 1080,
+   "ratio": 1.78
+  },
+  {
+   "file": "ttc-07.jpg",
+   "orig": "13(2).png",
+   "w": 1920,
+   "h": 1080,
+   "ratio": 1.78
+  },
+  {
+   "file": "ttc-08.jpg",
+   "orig": "13(3).png",
+   "w": 1920,
+   "h": 1080,
+   "ratio": 1.78
+  },
+  {
+   "file": "ttc-09.jpg",
+   "orig": "13.png",
+   "w": 1920,
+   "h": 1080,
+   "ratio": 1.78
+  },
+  {
+   "file": "ttc-10.jpg",
+   "orig": "14(1).png",
+   "w": 1920,
+   "h": 1080,
+   "ratio": 1.78
+  },
+  {
+   "file": "ttc-11.jpg",
+   "orig": "14(2).png",
+   "w": 1920,
+   "h": 1080,
+   "ratio": 1.78
+  },
+  {
+   "file": "ttc-12.jpg",
+   "orig": "14(3).png",
+   "w": 1920,
+   "h": 1080,
+   "ratio": 1.78
+  },
+  {
+   "file": "ttc-13.jpg",
+   "orig": "14.png",
+   "w": 1920,
+   "h": 1080,
+   "ratio": 1.78
+  },
+  {
+   "file": "ttc-14.jpg",
+   "orig": "15(1).png",
+   "w": 1920,
+   "h": 1080,
+   "ratio": 1.78
+  },
+  {
+   "file": "ttc-15.jpg",
+   "orig": "15(2).png",
+   "w": 1920,
+   "h": 1080,
+   "ratio": 1.78
+  },
+  {
+   "file": "ttc-16.jpg",
+   "orig": "15.png",
+   "w": 1920,
+   "h": 1080,
+   "ratio": 1.78
+  },
+  {
+   "file": "ttc-17.jpg",
+   "orig": "16.png",
+   "w": 1920,
+   "h": 1080,
+   "ratio": 1.78
+  },
+  {
+   "file": "ttc-18.jpg",
+   "orig": "2.png",
+   "w": 1920,
+   "h": 1080,
+   "ratio": 1.78
+  },
+  {
+   "file": "ttc-19.jpg",
+   "orig": "3.png",
+   "w": 1920,
+   "h": 1080,
+   "ratio": 1.78
+  },
+  {
+   "file": "ttc-20.jpg",
+   "orig": "4.png",
+   "w": 1920,
+   "h": 1080,
+   "ratio": 1.78
+  },
+  {
+   "file": "ttc-21.jpg",
+   "orig": "5.png",
+   "w": 1920,
+   "h": 1080,
+   "ratio": 1.78
+  },
+  {
+   "file": "ttc-22.jpg",
+   "orig": "6.png",
+   "w": 1920,
+   "h": 1080,
+   "ratio": 1.78
+  },
+  {
+   "file": "ttc-23.jpg",
+   "orig": "7.png",
+   "w": 1920,
+   "h": 1080,
+   "ratio": 1.78
+  },
+  {
+   "file": "ttc-24.jpg",
+   "orig": "8.png",
+   "w": 1920,
+   "h": 1080,
+   "ratio": 1.78
+  }
+ ],
+ "virtual-bleeps": [
+  {
+   "file": "virtual-bleeps-01.jpg",
+   "orig": "set 1.jpeg",
+   "w": 2000,
+   "h": 1500,
+   "ratio": 1.33
+  },
+  {
+   "file": "virtual-bleeps-02.jpg",
+   "orig": "set 2.jpeg",
+   "w": 1536,
+   "h": 1152,
+   "ratio": 1.33
+  },
+  {
+   "file": "virtual-bleeps-03.jpg",
+   "orig": "set 3.jpeg",
+   "w": 1536,
+   "h": 1152,
+   "ratio": 1.33
+  },
+  {
+   "file": "virtual-bleeps-04.jpg",
+   "orig": "set 4.jpeg",
+   "w": 2000,
+   "h": 1500,
+   "ratio": 1.33
+  },
+  {
+   "file": "virtual-bleeps-05.jpg",
+   "orig": "set 5.jpeg",
+   "w": 1536,
+   "h": 1152,
+   "ratio": 1.33
+  }
+ ],
+ "thoa": [
+  {
+   "file": "thoa-01.jpg",
+   "orig": "#U0110an - Ho#U00e0ng - Th#U00e0nh - H#U01b0ng 1.jpeg",
+   "w": 1440,
+   "h": 1440,
+   "ratio": 1.0
+  },
+  {
+   "file": "thoa-02.jpg",
+   "orig": "#U0110an - Ho#U00e0ng - Th#U00e0nh - H#U01b0ng2.jpeg",
+   "w": 1440,
+   "h": 1440,
+   "ratio": 1.0
+  },
+  {
+   "file": "thoa-03.jpg",
+   "orig": "#U0110an - Ho#U00e0ng - Th#U00e0nh - H#U01b0ng3.jpeg",
+   "w": 1440,
+   "h": 1440,
+   "ratio": 1.0
+  },
+  {
+   "file": "thoa-04.jpg",
+   "orig": "#U0110an - Ho#U00e0ng - Th#U00e0nh - H#U01b0ng4.jpeg",
+   "w": 1440,
+   "h": 1440,
+   "ratio": 1.0
+  },
+  {
+   "file": "thoa-05.jpg",
+   "orig": "#U0110an - Ho#U00e0ng - Th#U00e0nh - H#U01b0ng5.jpeg",
+   "w": 1440,
+   "h": 1440,
+   "ratio": 1.0
+  },
+  {
+   "file": "thoa-06.jpg",
+   "orig": "#U0110an.jpeg",
+   "w": 1440,
+   "h": 1425,
+   "ratio": 1.01
+  },
+  {
+   "file": "thoa-07.jpg",
+   "orig": "exhibition 0.png",
+   "w": 941,
+   "h": 1672,
+   "ratio": 0.56
+  },
+  {
+   "file": "thoa-08.jpg",
+   "orig": "exhibition 1.jpeg",
+   "w": 1440,
+   "h": 1440,
+   "ratio": 1.0
+  },
+  {
+   "file": "thoa-09.jpg",
+   "orig": "exhibition 2.jpeg",
+   "w": 1152,
+   "h": 1152,
+   "ratio": 1.0
+  },
+  {
+   "file": "thoa-10.jpg",
+   "orig": "ho#U00e0ng.jpeg",
+   "w": 1440,
+   "h": 1440,
+   "ratio": 1.0
+  },
+  {
+   "file": "thoa-11.jpg",
+   "orig": "ng#U1ecdc.jpeg",
+   "w": 1440,
+   "h": 1800,
+   "ratio": 0.8
+  },
+  {
+   "file": "thoa-12.jpg",
+   "orig": "th#U00e0nh.jpeg",
+   "w": 1440,
+   "h": 1800,
+   "ratio": 0.8
+  }
+ ]
+}

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://qaun.homes/sitemap.xml
