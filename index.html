@@ -148,11 +148,38 @@ a.plink:hover{background:var(--ink);color:var(--paper);text-decoration:none}
 .rbtn:hover{background:var(--ink);color:var(--paper)}
 .ph span{font-family:'Martian Mono',monospace;font-size:9px;letter-spacing:.09em;text-transform:uppercase;color:var(--mid);background:var(--paper);padding:2px 5px}
 
+
+#winSound{width:min(720px,calc(100vw - 24px));height:min(620px,calc(100vh - 24px));top:130px;left:170px}
+.trk{display:grid;grid-template-columns:34px minmax(0,1fr) auto;gap:14px;align-items:center;width:100%;text-align:left;padding:11px 0;border-bottom:1px solid var(--edge);cursor:pointer;background:none;border-left:0;border-right:0;border-top:0}
+.trk:hover,.trk:focus-visible{background:var(--edge-2);outline:none}
+.trk.on{background:var(--ink);color:var(--paper)}
+.trkno{font-family:'Martian Mono',monospace;font-size:10px;font-weight:300;letter-spacing:.06em;opacity:.65}
+.trkname{font-size:clamp(16px,2vw,22px);letter-spacing:-.015em;line-height:1.2}
+.trkmeta{font-size:11px;letter-spacing:.07em;text-transform:uppercase;opacity:.65;margin-top:3px}
+.trkdur{font-family:'Martian Mono',monospace;font-size:11px;font-weight:300;font-variant-numeric:tabular-nums}
+.player{position:sticky;bottom:0;background:var(--paper);border-top:1px solid var(--ink);padding:13px 0 2px;margin-top:8px}
+.pbar{display:flex;align-items:center;gap:12px}
+.pbtn{width:34px;height:34px;flex:none;border:1px solid var(--ink);background:var(--paper);color:var(--ink);cursor:pointer;font-size:12px;display:flex;align-items:center;justify-content:center}
+.pbtn:hover{background:var(--ink);color:var(--paper)}
+.pnow{flex:1;min-width:0;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ptime{font-family:'Martian Mono',monospace;font-size:10.5px;font-weight:300;font-variant-numeric:tabular-nums;color:var(--mid);flex:none}
+.seek{width:100%;margin-top:10px;-webkit-appearance:none;appearance:none;background:transparent;height:14px;cursor:pointer}
+.seek::-webkit-slider-runnable-track{height:2px;background:var(--edge)}
+.seek::-moz-range-track{height:2px;background:var(--edge)}
+.seek::-webkit-slider-thumb{-webkit-appearance:none;width:11px;height:11px;background:var(--ink);margin-top:-4.5px;border-radius:0}
+.seek::-moz-range-thumb{width:11px;height:11px;background:var(--ink);border:0;border-radius:0}
+.seek:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+.snote{font-size:12.5px;line-height:1.6;color:var(--mid);margin-bottom:20px;border-bottom:1px solid var(--edge);padding-bottom:14px}
+.cell.snd{color:var(--ink);font-weight:500;cursor:pointer}
+.cell.snd::before{content:"";position:absolute;inset:5px 28% auto 28%;height:2px;background:var(--ink)}
+.cell.snd:hover::before,.cell.snd:focus-visible::before{background:var(--paper)}
+.sw.s::before{content:"";position:absolute;inset:2px 4px auto 4px;height:2px;background:var(--ink)}
+
 @media (max-width:720px){
   .thead,.trow{grid-template-columns:1fr 54px;gap:8px}
   .thead .c2,.thead .c1,.trow .tm.role{display:none}
   .pgrid{grid-template-columns:1fr}
-  #winAbout,#winWorks,#winContact{top:12px;left:12px;width:calc(100vw - 24px);height:calc(100vh - 24px)}
+  #winAbout,#winWorks,#winContact,#winSound{top:12px;left:12px;width:calc(100vw - 24px);height:calc(100vh - 24px)}
 }
 @media (prefers-reduced-motion:reduce){.cell{transition:none}}
 </style>
@@ -179,18 +206,19 @@ a.plink:hover{background:var(--ink);color:var(--paper);text-decoration:none}
   <div class="board">
     <div class="grid" id="grid" role="group" aria-label="Works and fragments as a number board"></div>
     <div class="key">
-      <span><i class="sw w"></i>Work</span><span><i class="sw u"></i>Upcoming</span><span><i class="sw f"></i>Fragment</span><span><i class="sw"></i>A reading</span>
+      <span><i class="sw w"></i>Work</span><span><i class="sw u"></i>Upcoming</span><span><i class="sw s"></i>Sound</span><span><i class="sw f"></i>Fragment</span><span><i class="sw"></i>A reading</span>
     </div>
   </div>
   <div class="side">
     <div class="readout">
       <p class="rl" id="rl">Nothing held</p>
       <p class="rt" id="rt">Every number carries a reading</p>
-      <p class="rd" id="rd">Ten hold a work. The rest hold nothing, and say so. The board is dealt again on every visit; the readings stay with their numbers.</p>
+      <p class="rd" id="rd">Ten hold a work, three a track. The rest hold nothing, and say so. The board is dealt again on every visit; the readings stay with their numbers.</p>
     </div>
     <p class="stmt">My work asks what holds together when nothing is at the middle. A structure stays standing not because something commands it from a center, but because its parts keep answering one another.</p>
     <nav class="nav">
       <button data-open="winWorks">Works</button>
+      <button data-open="winSound">Sound</button>
       <button data-open="winAbout">About</button>
       <a href="https://www.netchua.live/" target="_blank" rel="noopener">NetChùa! ↗</a>
       <button data-open="winContact">Contact</button>
@@ -240,6 +268,24 @@ a.plink:hover{background:var(--ink);color:var(--paper);text-decoration:none}
       <dt>Line</dt><dd><a href="tel:+84898555443">(+84) 898 555 443</a></dd>
     </dl>
     <p class="cxnote">Based in Hanoi, Vietnam. Available for commission, collaboration and live performance.</p>
+  </div>
+</section>
+
+<!-- SOUND WINDOW -->
+<section class="win" id="winSound" role="dialog" aria-label="Sound archive">
+  <div class="chrome"><div class="lights"><i class="x" data-close></i><i></i><i></i></div><span class="wtitle">Sound archive</span></div>
+  <div class="wbody">
+    <p class="snote">Produced tracks, live recordings and studio material. Played in order unless a track is chosen.</p>
+    <div id="trklist"></div>
+    <div class="player">
+      <div class="pbar">
+        <button class="pbtn" id="pplay" aria-label="Play">&#9654;</button>
+        <span class="pnow" id="pnow">No track selected</span>
+        <span class="ptime" id="ptime">0:00 / 0:00</span>
+      </div>
+      <input class="seek" id="pseek" type="range" min="0" max="1000" value="0" aria-label="Seek">
+      <audio id="aud" preload="none"></audio>
+    </div>
   </div>
 </section>
 
@@ -386,16 +432,62 @@ const PHIL=[
 ];
 const reading=n=>PHIL[(n*37+11)%PHIL.length];
 
+/* ---------------- sound archive ----------------
+   Add a track: drop the .mp3 in the repo root, add a line here.
+   f = filename, t = title, k = kind, y = year, n = optional note   */
+const SOUND=[
+ {f:"sound-01.mp3",t:"22",k:"Live demo",y:"2026",n:"Otto Bar — Virtual Bleeps"},
+ {f:"sound-02.mp3",t:"DKM",k:"Broadcast set",y:"2026",n:"Metal Box — Aaja Radio"},
+ {f:"sound-03.mp3",t:"G4B",k:"EP",y:"2027",n:"GB EP. 27"}
+];
+
+const aud=document.getElementById('aud'),tl=document.getElementById('trklist'),
+      pplay=document.getElementById('pplay'),pnow=document.getElementById('pnow'),
+      ptime=document.getElementById('ptime'),pseek=document.getElementById('pseek');
+let cur=-1;
+const mmss=s=>isFinite(s)?Math.floor(s/60)+':'+String(Math.floor(s%60)).padStart(2,'0'):'0:00';
+
+tl.innerHTML=SOUND.map((s,i)=>`<button class="trk" data-t="${i}" aria-label="Play ${s.t}">
+  <span class="trkno">${String(i+1).padStart(2,'0')}</span>
+  <span><span class="trkname">${s.t}</span><span class="trkmeta">${s.k} · ${s.y}${s.n?' · '+s.n:''}</span></span>
+  <span class="trkdur" id="d${i}">--:--</span></button>`).join('');
+
+/* read durations without downloading the whole file */
+SOUND.forEach((s,i)=>{const a=new Audio();a.preload='metadata';a.src=s.f;
+  a.addEventListener('loadedmetadata',()=>{const el=document.getElementById('d'+i);if(el)el.textContent=mmss(a.duration);});
+  a.addEventListener('error',()=>{const el=document.getElementById('d'+i);if(el)el.textContent='--:--';});});
+
+const paint=()=>{tl.querySelectorAll('.trk').forEach((b,i)=>b.classList.toggle('on',i===cur));
+  pplay.innerHTML=aud.paused?'&#9654;':'&#10074;&#10074;';
+  pplay.setAttribute('aria-label',aud.paused?'Play':'Pause');};
+
+const load=(i,play)=>{cur=i;aud.src=SOUND[i].f;pnow.textContent=SOUND[i].t+' — '+SOUND[i].k;
+  if(play)aud.play().catch(()=>{pnow.textContent=SOUND[i].t+' — file not found';});paint();};
+
+tl.addEventListener('click',e=>{const b=e.target.closest('.trk');if(!b)return;
+  const i=+b.dataset.t;
+  if(i===cur){aud.paused?aud.play().catch(()=>{}):aud.pause();paint();}else load(i,true);});
+
+pplay.addEventListener('click',()=>{if(cur<0)return load(0,true);
+  aud.paused?aud.play().catch(()=>{}):aud.pause();paint();});
+aud.addEventListener('play',paint);
+aud.addEventListener('pause',paint);
+aud.addEventListener('ended',()=>{if(cur<SOUND.length-1)load(cur+1,true);else paint();});
+aud.addEventListener('timeupdate',()=>{ptime.textContent=mmss(aud.currentTime)+' / '+mmss(aud.duration);
+  if(aud.duration)pseek.value=(aud.currentTime/aud.duration)*1000;});
+pseek.addEventListener('input',()=>{if(aud.duration)aud.currentTime=(pseek.value/1000)*aud.duration;});
+
 /* ---------------- board ---------------- */
 const fragKinds=[["Test render","Discarded output kept as material."],["System state","Capture of a patch mid-run."],["Still","Single frame pulled from a live set."],["Broken pass","Output after the system drifted."],["Note","Working text, not for publication."],["Loop","Fragment that never resolved."]];
 const grid=document.getElementById('grid'),rl=document.getElementById('rl'),rt=document.getElementById('rt'),rd=document.getElementById('rd');
 document.getElementById('seedout').textContent=Math.floor(Math.random()*9000)+1000;
 
-const FRAGS=24,taken=new Set();
-while(taken.size<WORKS.length+FRAGS)taken.add(Math.floor(Math.random()*100));
+const FRAGS=18,taken=new Set();
+while(taken.size<WORKS.length+SOUND.length+FRAGS)taken.add(Math.floor(Math.random()*100));
 const all=[...taken],map={};
 all.slice(0,WORKS.length).forEach((n,i)=>map[n]={k:'work',i:i,up:WORKS[i].up,t:WORKS[i].p,d:WORKS[i].up?'In development. Demo material only.':WORKS[i].c.split('\n')[0]});
-all.slice(WORKS.length).forEach((n,i)=>{const f=fragKinds[i%fragKinds.length];map[n]={k:'frag',t:f[0]+" "+String(i+1).padStart(2,'0'),d:f[1]};});
+all.slice(WORKS.length,WORKS.length+SOUND.length).forEach((n,i)=>{map[n]={k:'snd',i:i,t:SOUND[i].t,d:SOUND[i].k+' · '+SOUND[i].y};});
+all.slice(WORKS.length+SOUND.length).forEach((n,i)=>{const f=fragKinds[i%fragKinds.length];map[n]={k:'frag',t:f[0]+" "+String(i+1).padStart(2,'0'),d:f[1]};});
 const workSlots=all.slice(0,WORKS.length);
 
 const cells=[];
@@ -416,6 +508,12 @@ for(let i=0;i<100;i++){
       p.classList.add('open');row.setAttribute('aria-expanded','true');
       row.scrollIntoView({block:'center',behavior:'smooth'});
     });
+  }else if(e&&e.k==='snd'){
+    c.setAttribute('aria-label',e.t);
+    const show=()=>{rl.textContent='Sound — number '+n;rt.textContent=e.t;rd.textContent=e.d;};
+    c.addEventListener('mouseenter',show);c.addEventListener('focus',show);
+    c.addEventListener('click',()=>{open('winSound');load(e.i,true);
+      tl.querySelector('[data-t="'+e.i+'"]').scrollIntoView({block:'center',behavior:'smooth'});});
   }else{
     const lab=e?'Fragment · '+e.t:'Number '+n+' — holds nothing';
     const show=()=>{rl.textContent=lab;rt.textContent=r[0];rd.textContent=r[1];};
