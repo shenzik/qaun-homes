@@ -220,7 +220,7 @@ a.plink:hover{background:var(--ink);color:var(--paper);text-decoration:none}
     <p class="ab-sign">Qaun Huyen</p>
     <hr class="ab-rule">
 
-    <figure class="abfig"><img src="images/portrait-01.jpg" alt="Qaun Huyen" loading="lazy"></figure>
+    <figure class="abfig"><img src="portrait-01.jpg" alt="Qaun Huyen" loading="lazy"></figure>
     <h3 class="ab-h">Biography</h3>
     <p class="ab-p">Vũ Lê Hoàng, who works as Qaun Huyen, was born in Hanoi, Vietnam, in 2002. He studied Printmaking at the Vietnam University of Fine Arts, Hanoi.</p>
     <p class="ab-p">He works across moving image, sound and real-time systems. His practice takes Vietnamese vernacular gambling — xóc đĩa, đá gà, bầu cua, tá lả, đề and lô — as a working model of decentralised systems: fields in which outcomes are distributed, no center governs, and players persist in searching for one regardless. He builds audiovisual works that are run rather than composed, in which no frame is authored and no node holds command, and in which drift and breakage are kept as material rather than corrected.</p>
@@ -305,7 +305,7 @@ WORKS.forEach((w,i)=>{
         </div>
         <p class="pd">${w.d}</p>
       </div>
-      <div class="reel"><div class="strip">${w.med.map((m,k)=>`<figure class="ph" style="aspect-ratio:${m[1]}/${m[2]}"><img src="images/${m[0]}" alt="${w.p}, documentation ${k+1}" loading="lazy"></figure>`).join('')}</div><div class="reelbar"><span class="rcount">${w.med.length} image${w.med.length>1?"s":""}</span>${w.med.length>1?`<span class="rnav"><button class="rbtn" data-dir="-1" aria-label="Previous">&lsaquo;</button><button class="rbtn" data-dir="1" aria-label="Next">&rsaquo;</button></span>`:""}</div></div>
+      <div class="reel"><div class="strip">${w.med.map((m,k)=>`<figure class="ph" style="aspect-ratio:${m[1]}/${m[2]}"><img src="${m[0]}" alt="${w.p}, documentation ${k+1}" loading="lazy"></figure>`).join('')}</div><div class="reelbar"><span class="rcount">${w.med.length} image${w.med.length>1?"s":""}</span>${w.med.length>1?`<span class="rnav"><button class="rbtn" data-dir="-1" aria-label="Previous">&lsaquo;</button><button class="rbtn" data-dir="1" aria-label="Next">&rsaquo;</button></span>`:""}</div></div>
     </div>`;
 });
 wb.innerHTML=html;
